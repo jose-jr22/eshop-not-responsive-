@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAFF SHOP</title>
+    <link rel="stylesheet" href="shop.css">
+    <script src="login_to_admin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- SHOP VIEW -->
+    <div class="sidebar">
+        <div class="logo">Teresian<span>GO</span></div>
+            <ul>
+                <li>
+                    <a href="staff_acc_view.html">Home</a>
+                    <a href="staff-shop.html">Shop</a>
+                </li>
+            </ul>
+    </div>
+
+            <div class="header">
+                <div class="searchbar">
+                    <input type="text" id="input-search" placeholder="Enter your Item">
+                    <input type="submit"  onclick="search(show)" value="Search">
+                </div>
+                <li><a href="homepage.html" onclick="Logout(event)">Logout</a></li>
+            </div>
+
+            <!-- CATEGORY / PRODUCT -->
+            <div class="container">
+                <div class="category">
+                            <a href="#kinder">Kinder</a>
+                            <a href="#elem">Elem</a>
+                            <a href="#junior">Junior High</a>
+                            <a href="#senior">Senior High</a>
+                            <a href="#college">College</a>
+                </div>
+
+                <div class="shop-category">
+
+                    <!-- sections all -->
+                    <section id="kinder" class="hidden">
+                        <div class="categ-title">
+                            <h4>Kinder<span>Product</span></h4>
+                        </div>
+
+                        <!-- SA KINDER MUNA -->
+                        <div class="hero">
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img1.png" alt="png">
+                                </div>
+                                <div class="info-part" id="preschool">
+                                    <div class="text-part">
+                                        <h4 id="Uniform_girl">Uniform Girl</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 350</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BR  -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img2.png" alt="png">
+                                </div>
+                                <div class="info-part" id="preschool">
+                                    <div class="text-part">
+                                        <h4 id="uniform_boy">Uniform Boy</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 350</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img3.png" alt="png">
+                                </div>
+                                <div class="info-part" id="preschool">
+                                    <div class="text-part">
+                                        <h4 id="supplies">School supplies</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 50</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                       <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img4.png" alt="png">
+                                </div>
+                                <div class="info-part" id="preschool">
+                                    <div class="text-part">
+                                        <h4 id="pants">Pants</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 450</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img5.png" alt="png">
+                                </div>
+                                <div class="info-part" id="preschool">
+                                    <div class="text-part">
+                                        <h4 id="pe_pants">PE Pants</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 550</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img6.png" alt="png">
+                                </div>
+                                <div class="info-part" id="preschool">
+                                    <div class="text-part">
+                                        <h4 id="lace">Lace</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 50</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="fb.png" alt="png">
+                                </div>
+                                <div class="info-part" id="preschool">
+                                    <div class="text-part">
+                                        <h4 id="pe_shirts">PE Shirt</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 650</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                       <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="formal.png" alt="png">
+                                </div>
+                               <div class="info-part" id="preschool">
+                                    <div class="text-part">
+                                        <h4 id="ballpen">Ballpen</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 530</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!--  -->
+                    <section id="elem" class="hidden">
+                        <div class="categ-title">
+                            <h4>Elementary<span>Product</span></h4>
+                        </div>
+
+                        <!-- SA ELEMENTARY MUNA -->
+                        <div class="hero">
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img1.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Uniform Girl</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 550</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BR  -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img2.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Uniform Boy</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 510</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img3.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>School supplies</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 50</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img4.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Pants</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 450</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img5.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>PE Pants</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 650</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img6.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>PE Shirt</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 450</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="fb.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Lace</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 50</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="formal.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Ballpem</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 30</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!--  -->
+                    <section id="junior" class="hidden">
+                        <div class="categ-title">
+                            <h4>Junior High<span>Product</span></h4>
+                        </div>
+
+                          <!-- SA JUNIOR MUNA -->
+                        <div class="hero">
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img1.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Uniform Girl</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 350</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BR  -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img2.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Uniform Boy</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 350</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img3.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Lapis</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 20</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                       <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img4.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Cap</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 80</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img5.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Slacks</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 250</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img6.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Lace</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 80</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="fb.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Lace</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 80</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="formal.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Ballpem</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 50</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <!--  -->
+                    <section id="senior" class="hidden">
+                        <div class="categ-title">
+                            <h4>Senior High<span>Product</span></h4>
+                        </div>
+
+                          <!-- SA SENIOR MUNA -->
+                        <div class="hero">
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img1.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Uniform Girl</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 350</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BR  -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img2.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Uniform Boy</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 350</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img3.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Lapis</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 30</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img4.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Cap</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 90</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img5.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Slacks</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 250</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                       <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img6.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Lace</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 80</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                       <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="fb.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Lace</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 90</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="formal.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Ballpem</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 20</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <!--  -->
+                    <section id="college" class="hidden">
+                        <div class="categ-title">
+                            <h4>College<span>Product</span></h4>
+                        </div>
+
+                          <!-- SA COLLEGE MUNA -->
+                        <div class="hero">
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img1.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Uniform Girl</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 350</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                       <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BR  -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img2.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Uniform Boy</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 350</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img3.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Lapis</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 20</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img4.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Cap</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 100</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img5.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Slacks</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 350</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                       <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="img6.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Lace</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 90</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                       <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="fb.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Lace</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 80</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BR -->
+
+                            <div class="card-handle">
+                                <div class="card-img">
+                                    <img src="formal.png" alt="png">
+                                </div>
+                                <div class="info-part">
+                                    <div class="text-part">
+                                        <h4>Ballpem</h4>
+                                        <h6>Available</h6>
+                                    </div>
+                                    <div style="position: relative; left: -50px" class="size-btn">
+                                        <p>Pesos: 30</p>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                    <div class="user-btn">
+                                        <a href="addcart.html" onclick="addcart(event)" class="addcart">Add To Cart</a>
+                                        <a href="Buy.html" onclick="buy(event)" class="buy" >Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+</body>
+</html>
+
+
+
+<!-- id  uniform_girl
+id  uniform_boy
+id  supplies
+id  pants
+id  pe_pants
+id  lace
+id  pe_shirts
+id  ballpen
+ -->

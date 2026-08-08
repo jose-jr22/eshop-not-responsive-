@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Shopping Cart</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="cartlist.css">
+    <script src="login_to_admin.js"></script>
+        
+</head>
+<body>
+    <div class="cart-container">
+        <div class="cart-header">
+            <h1><i class="fas fa-shopping-cart"></i> Your Cart</h1>
+            <p>Review your items before checkout</p>
+        </div>
+        
+        <div class="cart-body">
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be populated by JavaScript -->
+            </div>
+
+            <div class="empty-cart" id="emptyCart">
+                <i class="fas fa-shopping-basket"></i>
+                <h2>Your cart is empty</h2>
+                <p>Add some amazing products to get started!</p>
+                <button onclick="back_to_shop(event)">Back</button>
+            </div>
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>

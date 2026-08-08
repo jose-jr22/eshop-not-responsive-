@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT ACC VIEW</title>
+    <link rel="stylesheet" href="student_acc_view.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    
+    <!-- STUDENT ACC VIEW -->
+    <div class="sidebar">
+        <div class="logo">Student<span>GO</span></div>
+            <ul>
+                <li>
+                    <a href="student_acc_view.html">Home</a>
+                    <a href="dashboard.html">DashBoard</a>
+                    <a href="shop.html">Shop</a>
+                    <!-- <a href="L_orderstatus.html">Order Status</a> -->
+                </li>
+            </ul>
+    </div>
+
+            <div class="header">
+                <li><a href="homepage.html" onclick="Logout(event)">Logout</a></li>
+            </div>
+
+        <section>
+            <div class="title-card">
+                <h1>Welcome Jose leona jr.</h1>
+                <p>StartUp Building my webby shop</p>
+            </div>
+
+            <div class="container">
+                <div class="profile-card">
+                    <h3>Student Profile</h3>
+
+                    <div class="containt">
+                        <div class="one-card">
+                            <img src="formal.png" alt="png">
+                        </div>
+                        <div class="one-card">
+                            <div class="label-info">
+                                <h4>Name: <span id="name">Jose leona jr.</span></h4>
+                                <h4>Age: <span id="age">23</span></h4>
+                                <h4>Address: <span id="address">cubao, pasay PH</span></h4>
+                                <h4>Student id: <span id="std-id">12-34-56</span></h4>
+                            </div>
+                        </div>
+                        <div class="one-card">
+                            <input type="text" id="names" name="name" placeholder="Enter Name">
+                            <input type="text" id="ages" name="Age" placeholder="Enter Age">
+                            <input type="text" id="addresss" name="Address" placeholder="Enter Address">
+                            <input type="text" id="ids" name="std_id" placeholder="Enter Student id">
+                            <input type="submit" onclick="update()" name="update" value="Update">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <script src="login_to_admin.js"></script>
+
+</body>
+</html>

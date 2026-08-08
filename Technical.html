@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <link rel="stylesheet" href="tech.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="login_to_admin.js"></script>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo">Admin<span>GO</span></div>
+            <ul>
+                <li>
+                    <a href="admin_acc_view.html">DashBoard</a>
+                    <!-- <a href="product_list._admn.html">Product List</a> -->
+                    <a href="Technical.html">Update</a>
+                </li>
+            </ul>
+    </div>
+            <div class="header">
+                <li><a href="homepage.html" onclick="Logout(event)">Logout</a></li>
+            </div>
+
+
+     <!-- footer update -->
+             <div class="footer-update">
+                <div class="cards1">
+                    <button onclick="update()">Update Stock</button>
+                </div>
+                <div class="cards1">
+                    <button onclick="add()">Add Product</button>
+                </div>
+                <div class="cards1">
+                    <button onclick="deletes()">Delete Stock</button>
+                </div>
+             </div>
+
+              <script>
+function update() {
+    Swal.fire({
+        title: 'Stock Updated!',
+        text: 'Stock has been successfully updated.',
+        icon: 'success',
+        confirmButtonText: 'OK'
+    });
+}
+
+function add() {
+    Swal.fire({
+        title: 'Product Added!',
+        text: 'New product has been successfully added.',
+        icon: 'success',
+        confirmButtonText: 'OK'
+    });
+}
+
+function deletes() {
+    Swal.fire({
+        title: 'Are you sure?',
+        text: 'Do you want to delete the stock?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Yes, delete it!',
+        cancelButtonText: 'Cancel'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire({
+                title: 'Deleted!',
+                text: 'Stock has been deleted.',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            });
+        }
+    });
+}
+</script>
+
+</body>
+</html>

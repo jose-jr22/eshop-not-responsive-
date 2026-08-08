@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="login_to_admin.js"></script>
+</head>
+<body>
+
+    <!-- DASHBOARD STD -->
+    <div class="sidebar">
+        <div class="logo">Teresian<span>GO</span></div>
+            <ul>
+                <li>
+                     <a href="student_acc_view.html">Home</a>
+                    <a href="dashboard.html">DashBoard</a>
+                    <a href="shop.html">Shop</a>
+                    <!-- <a href="L_orderstatus.html">Order Status</a> -->
+                </li>
+            </ul>
+    </div>
+
+            <div class="header">
+                <li><a href="homepage.html" onclick="Logout(event)">Logout</a></li>
+            </div>
+
+            <section>
+                <div class="header">
+                    <div class="card1">
+                        <h1>DashBoard</h1>
+                        <p>History,Category,Shop,Chat features</p>
+                    </div>
+                    <div class="card2">
+                        <h4></h4>
+                    </div>
+                </div>
+
+            </section>
+
+            <div class="container">
+                <div class="history">
+                    <div class="history-name">
+                        <h4>History</h4>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Oder Id</th>
+                            <th>Date</th>
+                            <th>Total</th>
+                        </tr>
+                        <tr>
+                            <td>Uniform</td>
+                            <td>2</td>
+                            <td>001</td>
+                            <td>2020-09-21</td>
+                            <td>5500</td>
+                        </tr>
+                        <tr>
+                            <td>Lace</td>
+                            <td>5</td>
+                            <td>002</td>
+                            <td>2020-09-22</td>
+                            <td>500</td>
+                        </tr>
+                        <tr>
+                            <td>Lapis</td>
+                            <td>2</td>
+                            <td>003</td>
+                            <td>2020-09-23</td>
+                            <td>2500</td>
+                        </tr>
+                         <tr>
+                            <td>Graph Note</td>
+                            <td>2</td>
+                            <td>004</td>
+                            <td>2020-09-24</td>
+                            <td>1500</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+
+               <section id="chat_features">
+                    <div class="containers">
+
+                        <div class="chat-container">
+                        
+                        <div class="chat-box" id="chatBox"></div>
+
+                        <div class="input-area">
+                            <input type="text" id="messageInput" placeholder="Type a message..." />
+                            <button onclick="sendMessage()">Send</button>
+                        </div>
+
+                        </div>
+
+                    </div>
+            </section>
+                
+            </div>
+
+</body>
+</html>

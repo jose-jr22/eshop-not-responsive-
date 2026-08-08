@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Staff Panel</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="login_to_admin.js"></script>
+<link rel="stylesheet" href="staff_acc_view.css">
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    width: 150px;
+    height: 100%;
+    background: darkgreen;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar span {
+    color: yellow;
+}
+.sidebar a {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background: yellow;
+    color: black;
+}
+
+/* MAIN */
+.main {
+    margin-left: 260px;
+    padding: 20px;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+/* CARDS */
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+</style>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <h2>Staff<span>GO</span></h2>
+    <a href="#" onclick="showSection('profile')">Profile</a>
+    <a href="#" onclick="showSection('inventory')">Inventory</a>
+    <a href="#" onclick="showSection('history')">History</a>
+    <a href="staff-shop.html" onclick="showSection('shop')">Shop</a>
+    <a href="#" onclick="show('home')">Logout</a>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+    <!-- PROFILE -->
+    <div id="profile" class="section active">
+        <div class="card">
+            <h2>Profile</h2>
+            <p>Name: <span id="name">Pich Mango</span></p>
+            <p>Age: <span id="age">23</span></p>
+            <p>Address: <span id="address">Cubao</span></p>
+
+            <input id="names" placeholder="Name">
+            <input id="ages" placeholder="Age">
+            <input id="addresss" placeholder="Address">
+            <button onclick="updateProfile()">Update</button>
+        </div>
+    </div>
+
+    <!-- INVENTORY -->
+    <div id="inventory" class="section">
+        <div class="card">
+            <h2>Inventory</h2>
+
+            <input type="text" placeholder="Search..." onkeyup="searchItems(this.value)">
+
+            <table id="inventoryTable">
+                <tr>
+                    <th>Name</th>
+                    <th>Stock</th>
+                </tr>
+                <tr>
+                    <td>Lace</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>Uniform</td>
+                    <td>12</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- HISTORY -->
+    <div id="history" class="section">
+        <div class="card">
+            <h2>Purchase History</h2>
+
+            <table>
+                <tr>
+                    <th>Student</th>
+                    <th>Items</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>Juan</td>
+                    <td>Uniform</td>
+                    <td>₱450</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>Pants</td>
+                    <td>₱300</td>
+                </tr>
+                <tr>
+                    <td>Abad</td>
+                    <td>Pe</td>
+                    <td>₱600</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+/* SWITCH SECTIONS */
+function showSection(id) {
+    document.querySelectorAll('.section').forEach(sec => {
+        sec.classList.remove('active');
+    });
+    document.getElementById(id).classList.add('active');
+}
+
+/* PROFILE UPDATE */
+function updateProfile() {
+    document.getElementById('name').textContent =
+        document.getElementById('names').value;
+
+    document.getElementById('age').textContent =
+        document.getElementById('ages').value;
+
+    document.getElementById('address').textContent =
+        document.getElementById('addresss').value;
+}
+
+/* SEARCH */
+function searchItems(q) {
+    const rows = document.querySelectorAll("#inventoryTable tr");
+    rows.forEach(r => {
+        r.style.display =
+            r.textContent.toLowerCase().includes(q.toLowerCase())
+            ? "" : "none";
+    });
+}
+function show(home) {
+    if(confirm("are you sure you want to Logout?")) {
+        window.location.href = "homepage.html"
+    }
+     home.preventDefault()
+
+}
+
+</script>
+
+</body>
+</html>

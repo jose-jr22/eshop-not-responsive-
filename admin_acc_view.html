@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN ACC VIEW</title>
+    <link rel="stylesheet" href="admin_acc_view.css">
+    <script src="login_to_admin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <!-- ADMIN ACC VIEW -->
+    
+    <div class="sidebar">
+        <div class="logo">Admin<span>GO</span></div>
+            <ul>
+                <li>
+                    <a href="admin_acc_view.html">DashBoard</a>
+                    <a href="product_list._admn.html">Product List</a>
+                    <a href="Technical.html">Update</a>
+                </li>
+            </ul>
+    </div>
+            <div class="header">
+                <li><a href="homepage.html" onclick="Logout(event)">Logout</a></li>
+            </div>
+
+        <section id="container">
+
+                <!-- head left -->
+             <div class="head-left">
+                <div class="card1">
+                    <div class="text1">Quantity</div>
+                    <div class="text2">101</div>
+                </div>
+
+                <div class="card2">
+                    <div class="text1">Stocks</div>
+                    <div class="text2">201</div>
+                </div>
+
+                <div class="card3">
+                    <div class="text1">Sales</div>
+                    <div class="text2">1202</div>
+                </div>
+
+                <div class="card4">
+                    <div class="text1">Offers</div>
+                    <div class="text2">201</div>
+                </div>
+             </div>
+
+             <div class="pie-sales">
+                <div class="pie"></div>
+
+                <div class="legend">
+                    <div><span class="box" style="background:skyblue;"></span> Sales - 40%</div>
+                    <div><span class="box" style="background:yellow;"></span> Stocks - 30%</div>
+                    <div><span class="box" style="background:darkgreen;"></span> Offers - 20%</div>
+                    <div><span class="box" style="background:green;"></span> Quantity - 10%</div>
+                </div>
+             </div>
+        </section>
+
+
+       
+</body>
+</html>
